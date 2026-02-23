@@ -1,0 +1,142 @@
+
+/*  COLOR THEME (VARIABLES) */
+:root {
+--primary-color: #0ea5e9;  /* Soft blue */
+  --secondary-color: #1f2937;
+  --background-color: #f3f4f6;
+  --card-bg: #efe9e9;
+  --text-color: #11397a;
+  --accent-color: #15986c; /* Green (data/finance vibe) */
+
+}
+/*  RESET & BOX MODEL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+/*  HEADER SECTION */
+header {
+    background-color: var(--card-bg);
+    text-align: center;
+    padding: 3rem 1rem;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+header p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+}
+
+header img {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+}
+
+
+
+/*   NAVIGATION */
+nav {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/*   SECTION STYLING */
+section {
+    width: 85%;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--primary-color);
+    padding-left: 10px;
+}
+
+
+
+/*  PROJECT CARDS */
+
+#projects article {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+#projects article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+#projects h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+#projects ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+/*   CONTACT SECTION */
+#contact a {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#contact a:hover {
+    background-color: var(--accent-color);
+}
+
+/*  FOOTER */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
