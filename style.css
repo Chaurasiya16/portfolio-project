@@ -18,17 +18,20 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: linear-gradient(135deg,#0f172a,#020617,#0f172a);
+    color: #e5e7eb;
     line-height: 1.6;
 }
 /*  HEADER SECTION */
-header {
-    background-color: var(--card-bg);
+
+   header {
+    background: rgba(255,255,255,0.03);
     text-align: center;
-    padding: 3rem 1rem;
-    border-bottom: 3px solid var(--primary-color);
+    padding: 4rem 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
 }
+
 
 header h1 {
     font-size: 2.5rem;
@@ -42,9 +45,7 @@ header p {
 }
 
 header img {
-    width: 120px;
-    border-radius: 50%;
-    border: 4px solid var(--primary-color);
+    
 }
 
 
